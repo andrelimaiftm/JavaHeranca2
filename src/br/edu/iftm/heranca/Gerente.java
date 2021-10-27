@@ -21,10 +21,13 @@ public class Gerente extends Funcionario{
         }
     }
 
-    /*public double getBonificacao(){
+    /*@Override
+    public double getBonificacao(){
         return this.salario*0.10+1000;
     }*/
 
+    //Polimorfismo por sobreposição
+    @Override
     public double getBonificacao(){
         return super.getBonificacao()+1000;
     }
@@ -68,8 +71,5 @@ public class Gerente extends Funcionario{
     public void setNumeroDeFuncionariosGerenciados(int numeroDeFuncionariosGerenciados) {
         this.numeroDeFuncionariosGerenciados = numeroDeFuncionariosGerenciados;
     }
-
-    
-
     
 }
